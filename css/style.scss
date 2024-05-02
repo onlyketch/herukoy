@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: "Coming Soon", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 1229px) {
+        max-width: 750px;
+    }
+
+    @media (max-width: 779px) {
+        max-width: 630px;
+    }
+
+    @media (max-width: 659px) {
+        max-width: 320px;
+    }
+
+    @media (max-width: 349px) {
+        max-width: 290px;
+    }
+}
+
+.header {
+    background-color: #F2F2F2;
+    padding: 147px 0 60px 0;
+
+    @media (max-width: 659px) {
+        padding: 40px 0;
+    }
+}
+.header__logo {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+    img {
+        @media (max-width: 659px) {
+            width: 120px;
+            height: 139px;
+        }
+    }
+}
+.header__nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+
+    @media (max-width: 659px) {
+        margin-top: 30px;
+    }
+}
+.header__nav-item {
+    margin: 0 15px;
+
+    a {
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 31px;
+        color: #184478;
+        letter-spacing: 0.05em;
+
+        @media (max-width: 659px) {
+            font-size: 16px;
+            line-height: 24px; 
+        }
+    }
+
+    @media (max-width: 659px) {
+        margin: 0 10px;
+    }
+}
+
+.gallery {
+    padding-top: 70px;
+    padding-bottom: 132px;
+    text-align: center;
+
+    @media (max-width: 659px) {
+        padding-top: 40px;
+        padding-bottom: 60px; 
+    }
+}
+.gallery__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @media (max-width: 1229px) {
+        margin-bottom: 14px;
+    }
+
+    @media (max-width: 659px) {
+        margin-bottom: 10px; 
+    }
+}
+.gallery__item {
+    flex: 1 1 100%;
+    height: auto;
+    max-width: 380px;
+    height: 380px;
+    border-radius: 6px;
+
+    @media (max-width: 1229px) {
+        max-width: 240px;
+        height: 240px;
+    }
+
+    @media (max-width: 779px) {
+        max-width: 200px;
+        height: 200px;
+    }
+
+    @media (max-width: 659px) {
+        max-width: 100px;
+        height: 100px;
+    }
+
+    @media (max-width: 349px) {
+        max-width:90px;
+        height: 90px;
+    }
+}
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.gallery__more {
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    appearance: none;
+    width: 230px;
+    height: 60px;
+    background-color: #FB2B3A;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-family: 'Coming Soon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    letter-spacing: 0.14em;
+    cursor: pointer;
+    transition: opacity .3s ease-out;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    @media (max-width: 659px) {
+        font-size: 16px;
+        line-height: 24px;
+        width: 170px;
+        height: 45px;
+        margin-top: 25px;
+    }
+}
+
+.footer {
+    background-color: #F2F2F2;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 659px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    @media (max-width: 659px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+.footer__left {
+    margin-left: 96px;
+
+    @media (max-width: 779px) {
+        margin-left: 0;
+    }
+}
+.footer__text {
+    font-size: 20px;
+    line-height: 31px;
+    letter-spacing: 0.05em;
+    color: #184478;
+
+    @media (max-width: 659px) {
+        font-size: 16px;
+        line-height: 24px; 
+    }
+}
+.footer__right {
+    margin-right: 96px;
+    a {
+        text-decoration: none;
+        color: #184478;
+    }
+
+    @media (max-width: 779px) {
+        margin-right: 0;
+    }
+
+    @media (max-width: 659px) {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
