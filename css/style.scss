@@ -53,9 +53,17 @@ table {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: "Coming Soon", cursive;
     font-weight: 400;
     font-style: normal;
+}
+
+html, body {
+    min-height: 100vh;
+    height: 100%;
+    min-height: 100%;
 }
 
 .invisible {
@@ -238,6 +246,10 @@ body {
     .container {
         background-color: #F2F2F2;
         padding: 105px 0;
+
+        @media (max-width: 659px) {
+            padding: 40px 0;
+        }
     }
 
     @media (max-width: 659px) {
@@ -248,6 +260,14 @@ body {
     max-width: 668px;
     margin: 0 auto;
     text-align: center;
+
+    @media (max-width: 779px) {
+        max-width: 500px;
+    }
+
+    @media (max-width: 659px) {
+        max-width: 250px;
+    }
 }
 .about__title, .contact__title {
     font-size: 28px;
@@ -268,6 +288,12 @@ body {
         text-decoration: underline;
     }
 
+    @media (max-width: 659px) {
+        margin-top: 25px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
 }
 
 
@@ -276,6 +302,7 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
     margin-top: 132px;
+    flex: 1 1 auto;
 
     .container {
         display: flex;
