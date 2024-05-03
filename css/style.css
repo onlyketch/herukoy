@@ -187,6 +187,7 @@ body {
   max-width: 380px;
   height: 380px;
   border-radius: 6px;
+  cursor: pointer;
 }
 @media (max-width: 1229px) {
   .gallery__item {
