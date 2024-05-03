@@ -134,12 +134,17 @@ body {
   line-height: 31px;
   color: #184478;
   letter-spacing: 0.05em;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 @media (max-width: 659px) {
   .header__nav-item a {
     font-size: 16px;
     line-height: 24px;
   }
+}
+.header__nav-item a:hover {
+  color: #FB2B3A;
 }
 @media (max-width: 659px) {
   .header__nav-item {
@@ -316,6 +321,11 @@ body {
 .footer__right a {
   text-decoration: none;
   color: #184478;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.footer__right a:hover {
+  color: #FB2B3A;
 }
 @media (max-width: 779px) {
   .footer__right {
